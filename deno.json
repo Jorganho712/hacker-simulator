@@ -1,0 +1,12 @@
+{
+  "nodeModulesDir": "auto",
+  "unstable": ["sloppy-imports"],
+  "compilerOptions": { "lib": ["dom", "dom.iterable", "esnext"] },
+  "tasks": {
+    "dev": "deno run -A node_modules/vite/bin/vite.js",
+    "build": "deno run -A node_modules/vite/bin/vite.js build",
+    "preview": "deno run -A node_modules/vite/bin/vite.js preview",
+    "typecheck": "deno run -A npm:typescript@5.9.3/tsc --noEmit -p .",
+    "test": "deno run -A scripts/playthrough.ts"
+  }
+}
